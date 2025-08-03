@@ -89,13 +89,15 @@ html, body {
 }
 
 .description {
-  font-size: clamp(1rem, 2vw, 1.1em);
-  color: #bbb;
-  transition: opacity 0.5s ease-in-out;
-  padding: 0 10px;
-  text-align: center;
-  word-break: break-word;
+  color: #ffffff; /* màu mặc định trong chế độ tối */
+  transition: color 0.3s ease;
 }
+
+/* Khi ở chế độ sáng */
+body.light-mode .description {
+  color: #111111; /* đen đậm hơn */
+}
+
 
 /* Nút mạng xã hội */
 .social-links-section {
@@ -241,6 +243,14 @@ html, body {
 
 
 /* Light mode styles */
+body.light-mode {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+body.light-mode .background-container {
+  filter: brightness(1);
+}
 body.light-mode {
   background-color: #ffffff;
   color: #000000;
