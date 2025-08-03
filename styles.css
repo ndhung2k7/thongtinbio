@@ -249,3 +249,14 @@ body.light-mode {
 body.light-mode .background-container {
   filter: brightness(1);
 }
+/* Toggle button fixed top right */
+.theme-toggle {
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  background-color: transparent;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 9999;
+}
